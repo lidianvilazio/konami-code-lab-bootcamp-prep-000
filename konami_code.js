@@ -5,7 +5,7 @@ function init() {
   debugger
   let index = 0
 
-  document.body.addEventListener ("keydown", function onKeyDownHandler(e) {
+  document.addEventListener ("keydown", function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
     if (key === alphabet[index]) {
       index++;
